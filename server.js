@@ -15,7 +15,8 @@ const express = require("express"),
 
 // Connect to the db
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://127.0.0.1:27017/riafy_db', {
+
+mongoose.connect(process.env.MONGODB_URI||'mongodb://127.0.0.1:27017/riafy_db', {
     useMongoClient: true
 }).then(
     () => { console.log("------------------Db is connected") },
