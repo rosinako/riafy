@@ -1,0 +1,102 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">Riafy Screener</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Screens</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About Us</a>
+    </li>
+  </ul>
+</nav>
+<div class="row" style="background-color: #eee;height: 450px;align-items: center;
+padding-left: 50px;padding-right: 50px;">
+<div class="col-md-12">
+  <div class="card bg-secondary text-white">
+    <div class="card-header">{{result.name}}</div>
+
+    <div class="card-body">
+      <div class="brdr">
+        <div class="row">
+          <div class="col-md-4">
+            <label>Market Cap</label>
+            <p>₹ {{result.market_cap}} Cr</p>
+          </div>
+          <div class="col-md-4">
+            <label>Current Market Price of stock</label>
+            <p>₹ {{result.curr_price}}</p>
+
+          </div>
+          <div class="col-md-4">
+            <label>Stock P/E</label>
+            <p>₹ {{result.stock_pe}}</p>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <label>Dividend Yield</label>
+            <p>{{result.dividend}} %</p>
+
+          </div>
+          <div class="col-md-4">
+            <label>ROCE</label>
+            <p>{{result.roce}} %</p>
+
+          </div>
+          <div class="col-md-4">
+            <label>ROE</label>
+            <p>₹ {{result.roe}} %</p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label>Debt to equity</label>
+            <p>{{result.eqDebit}} %</p>
+
+          </div>
+          <div class="col-md-4">
+            <label>EPS</label>
+            <p>{{result.eps}} %</p>
+
+          </div>
+          <div class="col-md-4">
+            <label>Reserves</label>
+            <p>{{result.reserves}} %</p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label>Debt</label>
+            <p>{{result.debt}} %</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<footer>
+  <div class="row" style="padding:30px 50px 30px 30px;">
+    <div class="col-md-4">
+      <div >Stock analysis screening tool </div>
+    </div>
+    <div class="col-md-4">
+      <div>Product</div>
+
+    </div>
+    <div class="col-md-4">
+      <div>Theme</div>
+    </div>
+
+  </div>
+</footer>
